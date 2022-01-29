@@ -1,0 +1,57 @@
+/* body要素(全体) */
+body
+{
+    /* 文字色を白に */
+    color: white;
+    /* 背景色を黒に */
+    background-color: #beb7e3;
+    height: 100%;
+}
+
+/* id="clock_frame" のdiv要素 */
+div#clock_frame
+{
+    /* 横幅を親要素であるbodyの100%(同じ幅)にする */
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+p
+{
+    /* 本来はインライン要素であるspanをブロック要素として扱う */
+    display: block;
+    /* ここでは親要素であるdivの内部で右に寄せて配置させる */
+    float: right;
+    /* 横幅を親要素であるdivの85%にする */
+    width: 85%;
+    /* フォントの種類を一番上で指定したGoogle Webフォントに設定する */
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+
+p#clock_date
+{
+    color: #b87Db4;
+    /* この要素の中におけるテキストを右詰めにする デフォルト値のtext-align:leftを上書き */
+    text-align: right;
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の0.5倍にする */
+    font-size: 0.5em;
+    /* 右のパディングの幅を親要素であるdivで設定されたフォントサイズ(px)の0.5倍にする */
+    padding-right: 0.5em;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* id="clock_time" のspan要素 */
+p#clock_time
+{
+    color: #935E4B;
+    /* フォントの大きさを親要素であるdivで設定されたサイズ(px)の2倍にする */
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
