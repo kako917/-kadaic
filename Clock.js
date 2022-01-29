@@ -18,7 +18,7 @@ function clock(){
   var mi = now.getMinutes();
 // 秒
   var s = now.getSeconds();
-// 日付時刻文字列のなかで常に2ケタにしておきたい部分はここで処理
+// 日付時刻文字列のなかで常に2ケタにしておきたい
   if (mo < 10) mo = "0" + mo;
   if (d < 10) d = "0" + d;
   if (mi < 10) mi = "0" + mi;
